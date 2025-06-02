@@ -349,14 +349,38 @@ main {
   margin-right: 20%;
 }
 
+/* Authentication Popup Styles */
 .popup {
-  display: none;
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: white;
-  padding: 20px;
-  box-shadow: 0px 0px 10px gray;
-  text-align: center;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.popup-content {
+  background: #222;
+  padding: 2rem;
+  border-radius: 8px;
+  color: #fff;
+  min-width: 300px;
+  box-shadow: 0 2px 10px #000;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.popup-content input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+}
+.popup-content button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
 }
