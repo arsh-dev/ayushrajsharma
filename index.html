@@ -59,6 +59,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </ul>
       </nav>
     </header>
+    <alert id="authPopup" class="popup">
+      <h2>Unauthorized Access Denied! ❌</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username">
+      <label for="password">Password:</label>
+      <input type="password" id="password">
+      <button onclick="validateCredentials()">Submit</button>
+    </alert>
 
     <main id="home">
       <h1 class="lg-heading">
