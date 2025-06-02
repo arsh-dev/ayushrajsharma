@@ -31,3 +31,22 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+function authenticate(event) {
+  event.preventDefault(); // Prevent default navigation
+  document.getElementById("authPopup").style.display = "block";
+}
+
+function validateCredentials() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+
+  var correctUsername = "ayush";
+  var correctPassword = "raj";
+
+  if (username === correctUsername && password === correctPassword) {
+      window.location.href = "work.html"; // Redirect if credentials are correct
+  } else {
+      alert("Invalid credentials! Access denied.");
+  }
+}
